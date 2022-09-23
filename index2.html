@@ -9,7 +9,7 @@
 	padding:0;
 	 }
 
-	 /*base styles*/
+/*base styles*/
 .boxes {background-color: lightyellow;
 padding: 10px;
 border: 5px dashed orange;
@@ -18,4 +18,100 @@ height: 300px;
 width: 300px;
 box-sizing: border-box; 
 display: inline-block;
+/*sed to make entire width 300 including padding and border */
 }
+.contents{background-color: orangered;
+	padding: 5px;
+	border: 2px dashed orange;
+	margin: 20px;
+	width: 100px;
+	display: inline-block;
+	
+}
+
+/*Large Devices*/
+
+@media (min-width: 992px) {
+
+#box1 { 
+	width: 33.33%;
+	height: 33,33%; 
+}
+#box2 {
+	width: 33.33%;
+	height: 33.33%;
+}
+#box3 {
+	width: 33.33%;
+	height: 33.33%;
+}
+
+}
+
+/*Medium Devices*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+#box1 { 
+	width: 33.33%;
+	height: 33.33%; 
+}
+#box2 {
+	width: 33.33%;
+	height: 33.33%;
+}
+#box3 {
+	width: 33.33%;
+	height: 33.33%;
+}
+
+/*Small Devices*/
+
+@media (max-width: 767px) {
+
+#box1 { 
+	width: 33.33%; 
+	height: 33.33%;
+}
+#box2 {
+	width: 33.33%;
+	height: 33.33%;
+}
+#box3 {
+	width: 33.33%;
+	height: 33.33%;
+}
+
+}
+
+
+body {display: inline}
+
+
+
+
+/*use classes to style group of elements use id to style singular element*/
+</style>
+</head>
+<body> 
+<div id="box1" class = "boxes"> 
+	<div id="content1" class="contents"> 
+		this is content inside of the div. sooo much content! 
+	</div>
+</div>
+
+<div id="box2" class = "boxes"> 
+	<div id="content2" class="contents"> 
+		this is content inside of the div. sooo much content! 
+	</div>
+</div>
+
+<div id="box3" class = "boxes">
+ <div id="content3" class="contents"> 
+      this is content inside of the div. sooo much content!
+  </div>
+</div>
+
+
+</body>
+</html>
